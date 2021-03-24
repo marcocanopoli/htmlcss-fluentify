@@ -93,6 +93,10 @@ h3 {
     font-size: 15px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 0.2s;
+}
+.list-inline li a:not(.btn):hover {
+    color: #7cbb02;
 }
 
 /* buttons */
@@ -106,7 +110,7 @@ h3 {
     border-radius: 8px;
     text-decoration: none;
     text-transform: uppercase;    
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .btn:hover {
     color: #0c325a;
@@ -114,10 +118,11 @@ h3 {
     border-color: white;
     opacity: 0.8;
 }
-.btn.btn-foot:hover {
+.btn-foot:hover {
     color: white;
     background-color: #0c325a;
     border-color: #0c325a;
+    opacity: 1;
 }
 
 .btn-green {
