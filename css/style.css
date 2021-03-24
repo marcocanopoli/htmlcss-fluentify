@@ -9,8 +9,33 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+main > section {
+    height: 750px;
+}
+
+main > hr {
+    width: 98%;
+    margin: 0 auto;
+    color: #d3d3d3;
+    opacity: 0.5;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 50px;    
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
 .container {
+    position: relative;
     width: 80%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -28,6 +53,15 @@ body {
     clear: both;
 }
 
+/* text */
+.med-grey-p {
+    color: #818181;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* list-inline */
 .list-inline {
     list-style: none;
 }
@@ -54,7 +88,14 @@ body {
     border: 2px solid;
     border-radius: 8px;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: uppercase;    
+    transition: 0.3s;
+}
+.btn:hover {
+    color: #0c325a;
+    background-color: white;
+    border-color: white;
+    opacity: 0.8;
 }
 
 .btn-green {
@@ -70,23 +111,6 @@ body {
 #login-btn {
     padding: 5px 40px;
 }
-
-/* debug */
-/* .header-nav {
-    background-color: aqua;
-}
-
-.header-logo {
-    background-color: coral;
-}
-
-.nav-left {
-    background-color: crimson;
-}
-
-.nav-right {
-    background-color: hotpink;
-} */
 
 /* header */
 header {
@@ -123,6 +147,7 @@ header {
     text-align: right;
 }
 
+/* jumbotron */
 .jumbotron {
     position: relative;
     height: 650px;
@@ -135,9 +160,65 @@ header {
     transform: translateY(-50%);
 }
 
-h1 {
-    color: white;
-    font-size: 70px;
-    font-weight: 500;
-    margin-bottom: 50px;    
+/* main */
+.banner {
+    height: 210px;
+    width: 100%;
+    background-color: #d3d3d3;
+}
+
+.banner-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-text p {
+    margin-top: 10px;
+    font-size: 25px;
+} 
+
+/* 3-blocks section */
+.block-33 {
+    width: 33.33%;
+    height: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.block-33 .block-img {
+    width: 100%;
+    height: 40%;
+    padding: 35px;
+}
+
+.block-33 img {
+    height: 100%;
+}
+
+.block-33 h3 {
+    height: 13%;
+    color: #7cbb02;
+}
+
+.block-33 p {
+    height: 35%;
+}
+
+.separator {
+    position: relative;
+    height: 12%;
+}
+
+.separator hr {
+    position: absolute;
+    width: 20%;
+    color: #d3d3d3;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
