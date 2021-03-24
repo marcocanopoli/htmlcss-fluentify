@@ -84,12 +84,10 @@ h3 {
 .list-inline {
     list-style: none;
 }
-
 .list-inline > li {
     display: inline-block;
     padding: 0 15px;
 }
-
 .list-inline a {
     color: white;
     font-size: 15px;
@@ -115,6 +113,11 @@ h3 {
     background-color: white;
     border-color: white;
     opacity: 0.8;
+}
+.btn.btn-foot:hover {
+    color: white;
+    background-color: #0c325a;
+    border-color: #0c325a;
 }
 
 .btn-green {
@@ -150,7 +153,6 @@ header {
     width: 15%;
     height: 100%;
 }
-
 .header-logo img {
     vertical-align: middle;
     height: 50%;
@@ -178,12 +180,10 @@ header {
     width: 100%;
     background-color: #d3d3d3;
 }
-
 .banner-text {
     width: 100%;
     text-align: center;
 }
-
 .banner-text p {
     margin-top: 10px;
     font-size: 25px;
@@ -197,22 +197,18 @@ header {
     padding: 15px;
     text-align: center;
 }
-
 .block-33 .block-img {
     width: 100%;
     height: 40%;
     padding: 35px;
 }
-
 .block-33 img {
     height: 100%;
 }
-
 .block-33 h3 {
     height: 13%;
     color: #7cbb02;
 }
-
 .block-33 p {
     height: 35%;
 }
@@ -221,7 +217,6 @@ header {
     position: relative;
     height: 12%;
 }
-
 .separator hr {
     width: 20%;
     color: #d3d3d3;
@@ -235,15 +230,12 @@ header {
     height: 100%;
     padding: 80px;
 }
-
 .block-50 img {
     height: 100%;
 }
-
 .block-50 p {
     margin: 20px 0;
 }
-
 .block-50 a {
     font-size: 20px;
 }
@@ -259,7 +251,6 @@ footer .block-50 {
     height: 100%;
     line-height: 210px;
 }
-
 .footer-form > * {
     /* display: inline-block; */
     margin-left: 35px;
@@ -277,4 +268,18 @@ footer .block-50 {
     color: #7cbb02;
     border-color: #7cbb02;
     cursor: pointer;
+}
+
+.help-box {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+
+#help-btn {
+    position: fixed;
+    bottom: 0;
+    right: calc(10% + ((292.117px / 2) + 70.7667px) / 2 );
+    height: 50px;
+    border-radius: 8px 8px 0 0;
 }
