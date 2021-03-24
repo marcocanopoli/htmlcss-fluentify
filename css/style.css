@@ -10,7 +10,7 @@ body {
 }
 
 main > section {
-    height: 750px;
+    height: 700px;
 }
 
 main > hr {
@@ -25,6 +25,11 @@ h1 {
     font-size: 70px;
     font-weight: 500;
     margin-bottom: 50px;    
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 500;
 }
 
 h3 {
@@ -45,6 +50,20 @@ h3 {
 
 .w-50 {
     width: 50%;
+}
+
+.align-y {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.align-xy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .clearfix::after {
@@ -153,13 +172,6 @@ header {
     height: 650px;
 }
 
-.jumbotron-text {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
 /* main */
 .banner {
     height: 210px;
@@ -168,11 +180,7 @@ header {
 }
 
 .banner-text {
-    position: absolute;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -183,6 +191,7 @@ header {
 
 /* 3-blocks section */
 .block-33 {
+    position: relative;
     width: 33.33%;
     height: 100%;
     padding: 15px;
@@ -214,11 +223,58 @@ header {
 }
 
 .separator hr {
-    position: absolute;
     width: 20%;
     color: #d3d3d3;
     margin: 0 auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+/* 2-blocks section */
+.block-50 {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 80px;
+}
+
+.block-50 img {
+    height: 100%;
+}
+
+.block-50 p {
+    margin: 20px 0;
+}
+
+.block-50 a {
+    font-size: 20px;
+}
+
+/* footer */
+footer .block-50 {
+    padding: 0;
+}
+
+.footer-form {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    line-height: 210px;
+}
+
+.footer-form > * {
+    /* display: inline-block; */
+    margin-left: 35px;
+    line-height: 30px;
+}
+
+.footer-form .selection {
+    border-bottom: 2px solid #818181;
+}
+.footer-form .selection::after {
+    padding-left: 100px;
+    content: "\25BC";
+}
+.footer-form .selection:hover {
+    color: #7cbb02;
+    border-color: #7cbb02;
+    cursor: pointer;
 }
