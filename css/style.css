@@ -399,6 +399,50 @@ header {
     position: relative;
     height: 30%;
 }
+.footer-box {
+    height: 70%;
+}
+.faqs-box {
+    height: 100%;
+}
+
+.footer-left {
+    position: absolute;
+    margin-top: 80px;
+    top: 0;
+    left: 0;
+}
+.footer-right {
+    position: absolute;
+    margin-top: 80px;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+.footer-menu h4 {
+    padding: 20px 0;
+}
+.footer-menu ul {
+    list-style: none;
+}
+.footer-menu a {
+    color: #818181;
+    font-size: 18px;
+    line-height: 2.2;
+    text-decoration: none;
+}
+
+.footer-right span {
+    display: block;
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+.footer-right p {
+    font-size: 18px;
+}
 
 /* help */
 .help-box {
