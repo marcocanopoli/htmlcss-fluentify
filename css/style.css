@@ -117,17 +117,17 @@ h3 {
     transition: 0.2s;
 }
 .btn:hover {
-    color: #0c325a;
-    background-color: white;
-    border-color: white;
-    opacity: 0.8;
+    color: white;
+    background-color: #6399D0;
+    border-color: #6399D0;
+    /* opacity: 0.8; */
 }
-.btn-foot:hover {
+/* .btn-foot:hover {
     color: white;
     background-color: #0c325a;
     border-color: #0c325a;
     opacity: 1;
-}
+} */
 
 .btn-green {
     background-color: #7cbb02;
@@ -261,7 +261,6 @@ footer .block-50 {
     line-height: 210px;
 }
 .footer-form > * {
-    /* display: inline-block; */
     margin-left: 35px;
     line-height: 30px;
 }
@@ -269,9 +268,8 @@ footer .block-50 {
 .footer-form .selection {
     border-bottom: 2px solid #818181;
 }
-.footer-form .selection::after {
+.footer-form .selection i::before {
     padding-left: 100px;
-    content: "\25BC";
 }
 .footer-form .selection:hover {
     color: #7cbb02;
