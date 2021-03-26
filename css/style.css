@@ -63,6 +63,10 @@ h4 {
     width: 50%;
 }
 
+.h-100 {
+    height: 100%;
+}
+
 .align-y {
     position: absolute;
     left: 0;
@@ -83,15 +87,12 @@ h4 {
     clear: both;
 }
 
-/* colors */
+/* palette */
 .bg-deepblue {
     background-color: #0c3259;
 }
 .bg-blue {
     background-color: #17416b;
-}
-.bg-orange {
-    background-color: #f8a509;
 }
 .bg-lblue {
     background-color: #6399D0;
@@ -99,11 +100,14 @@ h4 {
 .bg-green {
     background-color: #7cbb02;
 }
-.color-lblue {    
-    color: #6399D0;
+.bg-orange {
+    background-color: #f8a509;
 }
 .color-white {
     color: white;
+}
+.color-lblue {    
+    color: #6399D0;
 }
 .color-green {
     color: #7cbb02;
@@ -124,7 +128,7 @@ h4 {
 }
 .med-grey-p {
     color: #818181;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -174,14 +178,12 @@ h4 {
     color: white;
     background-color: #6399D0;
     border-color: #6399D0;
-    /* opacity: 0.8; */
 }
 
 .btn-green {
     background-color: #7cbb02;
     border-color: #7cbb02;
 }
-
 
 .btn-med {
     padding: 10px 20px;
@@ -212,7 +214,6 @@ header {
 
 .header-logo {
     width: 15%;
-    height: 100%;
 }
 .header-logo img {
     vertical-align: middle;
@@ -252,29 +253,21 @@ header {
     font-size: 25px;
 } 
 
-/* single-block section */
-.single-block {
+/* central-block section */
+.center-block {
     position: relative;
     width: 55%;
     padding: 80px 0;
     margin: 0 auto;
     text-align: center;
 }
-.single-block > * {
+.center-block > * {
     display: block;
     margin: 20px 0;
 }
-.single-block-img {
+.center-img-box {
     height: 40%;
     padding: 40px 0;
-}
-
-/* single left-floated block */
-.single-left-block {
-    width: 33.33%;
-}
-.single-left-block p {
-    margin: 40px 0;
 }
 
 /* 3-blocks section */
@@ -303,14 +296,12 @@ header {
 .overview .block-33 {    
     text-align: center;
 }
-.overview .block-img {
+.overview .img-box {
     width: 100%;
     height: 40%;
     padding: 35px;
 }
-.overview img {
-    height: 100%;
-}
+
 .overview .separator {
     position: relative;
     height: 12%;
@@ -329,65 +320,69 @@ header {
 .viewplan-form {
     position: absolute;
     right: 0;
-    height: 100%;
-    line-height: 210px;
 }
 .viewplan-form > * {
     margin-left: 35px;
-    line-height: 30px;
 }
 
-.viewplan-form .selection {
+.viewplan-form .select {
     border-bottom: 2px solid #818181;
 }
-.viewplan-form .selection i::before {
+.viewplan-form .select i::before {
     padding-left: 100px;
 }
-.viewplan-form .selection:hover {
+.viewplan-form .select:hover {
     color: #7cbb02;
     border-color: #7cbb02;
     cursor: pointer;
 }
 
+/* MORE INFO */
+.more-info {
+    width: 33.33%;
+}
+.more-info p {
+    margin: 40px 0;
+}
+
 /* CUSTOMER TYPE */
-.customer-type .block-33 {
+.customers .block-33 {
     height: 60%;
     padding: 0 50px;
 }
 
-.customer-type .title {
+.customers .title {
     margin: 100px 0;
     text-align: center;
 }
 
-.customer-type .block-img {    
-    position: relative;
+.customers .img-box {
     height: 20%;
 }
-.customer-type .block-img img {
+.customers .img-box img {
     height: 80%;
 }
 
-.customer-type .block-title {    
+.customers .block-title {    
     position: relative;
     height: 20%;
 }
 
-.customer-type .p-box {
+.customers .p-box {
     position: relative;
     height: 30%;
 }
 
-.customer-type .separator {
+.customers .separator {
     position: relative;
     height: 20%;
 }
-.customer-type .line {
+.customers .line {
     height: 10px;
     width: 100%;
 }
 
-.customer-type .link {    
+.customers .link {    
     position: relative;
     height: 10%;
 }
@@ -399,30 +394,18 @@ header {
     position: relative;
     height: 30%;
 }
+
+/* footer menu & contacts */
 .footer-box {
-    height: 70%;
-}
-.faqs-box {
-    height: 100%;
+    height: 70%;   
+    padding-top: 80px;
 }
 
-.footer-left {
-    position: absolute;
-    margin-top: 80px;
-    top: 0;
-    left: 0;
-}
-.footer-right {
-    position: absolute;
-    margin-top: 80px;
-    top: 0;
-    right: 0;
-    text-align: right;
-}
-
-.footer-menu h4 {
+.footer-box h4 {
     padding: 20px 0;
+    color: white;
 }
+
 .footer-menu ul {
     list-style: none;
 }
@@ -431,20 +414,17 @@ header {
     font-size: 18px;
     line-height: 2.2;
     text-decoration: none;
+    transition: 0.2s;
+}
+.footer-menu a:hover {
+    color: #7cbb02;
 }
 
-.footer-right span {
-    display: block;
-    padding: 20px 0;
-    font-size: 25px;
-    font-weight: 500;
-    color: white;
-}
-.footer-right p {
-    font-size: 18px;
+.footer-right {
+    text-align: right;
 }
 
-/* help */
+/* help label*/
 .help-box {
     position: absolute;
     width: 100%;
@@ -454,7 +434,7 @@ header {
 #help-btn {
     position: fixed;
     bottom: 0;
-    right: calc(10% + ((292.117px / 2) + 70.7667px) / 2 );
+    right: 300px;
     height: 50px;
     border-radius: 8px 8px 0 0;
 }
